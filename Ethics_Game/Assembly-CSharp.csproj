@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scenes\Menu_Controller.cs" />
     <Compile Include="Assets\Scenes\Player_Input_Controller.cs" />
     <Compile Include="Assets\Scenes\Scoreboard_Controller.cs" />
+    <Compile Include="Assets\SnakeBehavior.cs" />
+    <Compile Include="Assets\SpawnFood.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
