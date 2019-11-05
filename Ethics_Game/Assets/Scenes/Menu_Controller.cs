@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class Menu_Controller : MonoBehaviour {
+public class Button_Controller : MonoBehaviour {
 
     public void StartGame () {
 
-		SceneManager.LoadScene (1);
+		SceneManager.LoadScene ("Level Select Screen");
 	}
 
     public void StartGame_Easy()
