@@ -95,6 +95,9 @@ public class SnakeBehavior : MonoBehaviour
 
             // Decrease the number left
             numLeftToGo.DecreaseNumLeftToWin();
+
+            // Check to see if enough to win
+            numLeftToGo.EnoughToWin();
         }
         // Collided with Tail or Border
         else

@@ -26,7 +26,6 @@ public class Game2Actions : MonoBehaviour
     {
         numLeftToWin--;
         numLeftLabel.text = numLeftToWin.ToString();
-        EnoughToWin();
     }
 
     public void EnoughToWin()
