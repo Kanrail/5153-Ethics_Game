@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Obstacle : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class Obstacle : MonoBehaviour
 
         // Switch every few seconds
         InvokeRepeating("Switch", 0, switchTime);
+    }
+
+    void GoalCollision()
+    {
+        SceneManager.LoadScene(8);
     }
 
     void Switch()
