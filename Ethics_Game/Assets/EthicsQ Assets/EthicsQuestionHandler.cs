@@ -1,18 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Threading.Tasks;
+using Random = UnityEngine.Random;
 
-public class QuestionGenerator : MonoBehaviour
+public class EthicsQuestionHandler : MonoBehaviour
 {
+    private Dictionary<string, List<string>> questionDict;
     // Start is called before the first frame update
     void Start()
     {
         string path = "Assets/EthicsQ Assets/Questions_Easy.txt";
 
-        Dictionary<string,List<string> > questionDict = new Dictionary<string, List<string>>();
+        questionDict = new Dictionary<string, List<string>>();
         //StreamReader read = new StreamReader(path, true);
         string[] lines = System.IO.File.ReadAllLines(path);
 
@@ -39,6 +47,17 @@ public class QuestionGenerator : MonoBehaviour
             }
 
         }
+
+    }
+
+    string GetRandomQuestion()
+    {
+        int randomNum = Random.Range(1,questionDict.Count);
+        return questionDict.ElementAt(randomNum).Key;
+    }
+
+    void SetAnswerButtons()
+    {
 
     }
 

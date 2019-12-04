@@ -3,38 +3,34 @@
 -Our duty to act impartially and make decisions objectively
 -Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the consequences that result
 -Our duty to show high regard to ourselves, others and resources entrusted to us
-$1
+$Our duty to understand the truth and act in a truthful manner both in communication and in conduct
 #What is an accurate definition of responsibility?
 -Our duty to understand the truth and act in a truthful manner both in communication and in conduct
 -Our duty to show high regard to ourselves, others and resources entrusted to us
 -Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the consequences that result
 -Our duty to act impartially and make decisions objectively
-$3
+$Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the consequences that result
 #What is an accurate definition of Fairness?
 -Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the consequences that result
 -Our duty to understand the truth and act in a truthful manner both in communication and in conduct
 -Our duty to act impartially and make decisions objectively
 -Our duty to show high regard to ourselves, others and resources entrusted to us
-$3
+$Our duty to act impartially and make decisions objectively
 #What is an accurate definition of Respect?
 -Our duty to show high regard to ourselves, others and resources entrusted to us
 -Our duty to act impartially and make decisions objectively
 -Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the consequences that result
 -Our duty to understand the truth and act in a truthful manner both in communication and in conduct
-$1
-#Software Engineering Ethics is important because software can have far reaching effects
--True
--False
-$1
+$Our duty to show high regard to ourselves, others and resources entrusted to us
 #How many general principles are there in the ACM/ICEE Code of Standards?
 -5
 -10
 -6
 -8
-$4
+$8
 #What is a good reason for a Project Manager to be ethical?
 -Because they'll get more credit if they do
 -Because they are a role model for their team
 -Because they should
 -Because if they don't, the whole team will collapse
-$2
+$Because they are a role model for their team
