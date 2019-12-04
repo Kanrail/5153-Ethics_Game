@@ -26,7 +26,18 @@ public class Bird : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D coll)
     {
-        // Restart
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Reached the goal line
+        if (coll.gameObject.name.StartsWith("Goal"))
+        {
+            SceneManager.LoadScene("EthicsQuestion");
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            // Restart
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("FlappyBird");
+        }
+
     }
 }

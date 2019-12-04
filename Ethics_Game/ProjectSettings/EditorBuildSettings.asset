@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/EthicsQuestion2.unity
-    guid: bc461e16555778646bb6d74869200aff
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Level Select Screen.unity
     guid: fe6a38a046e5afb4dabfa0b1da707650
@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game2GameOver.unity
     guid: ff6e7937d1cdc8841b76e7895a008610
+  - enabled: 1
+    path: Assets/Scenes/EQuestionWLScreen.unity
+    guid: fd5d23a86dea220498c49e09009c21c9
+  - enabled: 1
+    path: Assets/Scenes/FlappyBird.unity
+    guid: 2bd93de9ba1fee24d8f5012df78552a2
+  - enabled: 1
+    path: Assets/Scenes/EthicsQuestion.unity
+    guid: fdf4b6e0da9836244b3252f1e74a0d9d
   m_configObjects: {}

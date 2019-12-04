@@ -19,11 +19,6 @@ public class Obstacle : MonoBehaviour
         InvokeRepeating("Switch", 0, switchTime);
     }
 
-    void GoalCollision()
-    {
-        SceneManager.LoadScene(8);
-    }
-
     void Switch()
     {
         GetComponent<Rigidbody2D>().velocity *= -1;
