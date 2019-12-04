@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ButtonHandler.cs" />
+    <Compile Include="Assets\EthicsQ Assets\QuestionGenerator.cs" />
     <Compile Include="Assets\Game2_Assets\SnakeBehavior.cs" />
     <Compile Include="Assets\Game2_Assets\SpawnFood.cs" />
     <Compile Include="Assets\Game2Actions.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <None Include="Assets\EthicsQ Assets\Questions_Easy.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
