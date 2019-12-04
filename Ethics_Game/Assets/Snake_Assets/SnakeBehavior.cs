@@ -102,7 +102,7 @@ public class SnakeBehavior : MonoBehaviour
         // Collided with Tail or Border
         else
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene("Game2GameOver");
         }
     }
 }

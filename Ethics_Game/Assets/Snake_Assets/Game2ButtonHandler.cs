@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonHandler : MonoBehaviour
+public class Game2ButtonHandler : MonoBehaviour
 {
     public void GoMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
-    public void RestartGame2()
+    public void RestartGame()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene("Game2");
     }
 }
