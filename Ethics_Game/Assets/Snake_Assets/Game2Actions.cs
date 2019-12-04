@@ -33,7 +33,7 @@ public class Game2Actions : MonoBehaviour
         if (numLeftToWin == 0)
         {
             //Will eventually progress to ethics question
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("EthicsQuestion");
         }
     }
 }
