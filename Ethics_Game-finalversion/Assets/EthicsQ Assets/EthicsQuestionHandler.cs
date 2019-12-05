@@ -11,6 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EthicsQuestionHandler : MonoBehaviour
@@ -26,8 +27,18 @@ public class EthicsQuestionHandler : MonoBehaviour
     public Text Answer3Label;
 
     public Text Answer4Label;
+
+    private string SelectedQuestion;
     // Start is called before the first frame update
     void Start()
+    {
+        BuildQDict();
+        SelectedQuestion = GetRandomQuestion();
+        SetAnswerButtons();
+
+    }
+
+    private void BuildQDict()
     {
         string path = "Assets/EthicsQ Assets/Questions_Easy.txt";
 
@@ -35,30 +46,30 @@ public class EthicsQuestionHandler : MonoBehaviour
         //StreamReader read = new StreamReader(path, true);
         string[] lines = System.IO.File.ReadAllLines(path);
 
-        string question="";
+        string question = "";
 
         List<string> answerList = new List<string>();
 
         foreach (string line in lines)
         {
-            char[] tempLineList = line.ToCharArray();
-            string lineMinusDelim = tempLineList.Skip(1).ToString();
-            if (tempLineList[0]=='*')
+            var firstChar = line.Substring(0, 1);
+            string lineMinusDelim = line.Substring(1);
+            if (firstChar == "#")
             {
                 question = lineMinusDelim;
-                questionDict.Add(question,answerList);
             }
-            else if (tempLineList[0] == '-')
+            else if (firstChar == "-")
             {
-                questionDict[question].Add(lineMinusDelim);
+                answerList.Add(lineMinusDelim);
             }
-            if (tempLineList[0] == '$')
+            if (firstChar == "$")
             {
-                questionDict[question].Add(lineMinusDelim);
+                answerList.Add(lineMinusDelim);
+                questionDict.Add(question, new List<string> { answerList[0], answerList[1], answerList[2], answerList[3], answerList[4] });
+                answerList.Clear();
             }
 
         }
-
     }
 
     private string GetRandomQuestion()
@@ -67,42 +78,48 @@ public class EthicsQuestionHandler : MonoBehaviour
         return questionDict.ElementAt(randomNum).Key;
     }
 
-    public void SetAnswerButtons(string question)
+    public void SetAnswerButtons()
     {
-        QuestionTextLabel.text = question;
-        Answer1Label.text = questionDict[question][0];
-        Answer2Label.text = questionDict[question][1];
-        Answer3Label.text = questionDict[question][2];
-        Answer4Label.text = questionDict[question][3];
+        QuestionTextLabel.text = SelectedQuestion;
+        Answer1Label.text = questionDict[SelectedQuestion][0];
+        Answer2Label.text = questionDict[SelectedQuestion][1];
+        Answer3Label.text = questionDict[SelectedQuestion][2];
+        Answer4Label.text = questionDict[SelectedQuestion][3];
     }
 
-    private bool CheckSelectedAnswer(string selectedAnswer, string question)
+    private void CheckSelectedAnswer(string selectedAnswer)
     {
-        if (questionDict[question][5] != selectedAnswer)
+        if (questionDict[SelectedQuestion][4] != selectedAnswer)
         {
-            return false;
+            SceneManager.LoadScene("EQuestionLScreen");
         }
         else
         {
-            return true;
+            SceneManager.LoadScene("EQuestionWScreen");
         }
-    }
-
-    private void WinningAnswer()
-    {
-
-    }
-
-    private void LosingAnswer()
-    {
-
     }
 
     public void AnswerButtonClick(Button button)
     {
-        string selectedAnswer = button.name;
-        string question = QuestionTextLabel.text;
-        bool correctAnswer = CheckSelectedAnswer(selectedAnswer, question);
+        string selectedButton = button.name;
+        string selectedAnswer = "";
+        switch (selectedButton)
+        {
+            case "Answer1Button":
+                selectedAnswer = Answer1Label.text;
+                break;
+            case "Answer2Button":
+                selectedAnswer = Answer2Label.text;
+                break;
+            case "Answer3Button":
+                selectedAnswer = Answer3Label.text;
+                break;
+            default:
+                selectedAnswer = Answer4Label.text;
+                break;
+        }
+
+        CheckSelectedAnswer(selectedAnswer);
     }
 
     // Update is called once per frame

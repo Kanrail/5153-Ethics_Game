@@ -177,10 +177,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -352,11 +352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9031596cf9db8d049a54addaf59c897f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QuestionTextLabel: {fileID: 0}
-  Answer1Label: {fileID: 0}
-  Answer2Label: {fileID: 0}
-  Answer3Label: {fileID: 0}
-  Answer4Label: {fileID: 0}
+  QuestionTextLabel: {fileID: 1902758814}
+  Answer1Label: {fileID: 1651579855}
+  Answer2Label: {fileID: 230578304}
+  Answer3Label: {fileID: 1616900746}
+  Answer4Label: {fileID: 987774977}
 --- !u!1 &519608474
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +438,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 519608477}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277470035}
+        m_MethodName: AnswerButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 519608476}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &519608477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -532,10 +543,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -633,7 +644,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 999325705}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277470035}
+        m_MethodName: AnswerButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 999325704}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &999325705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,7 +922,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1241199517}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277470035}
+        m_MethodName: AnswerButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1241199516}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1241199517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,7 +1073,7 @@ GameObject:
   - component: {fileID: 1616900747}
   - component: {fileID: 1616900746}
   m_Layer: 5
-  m_Name: Anaswer3Label
+  m_Name: Answer3Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1085,10 +1118,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1162,10 +1195,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 32
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1263,7 +1296,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1738096014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 277470035}
+        m_MethodName: AnswerButtonClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1738096013}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1738096014
 MonoBehaviour:
   m_ObjectHideFlags: 0

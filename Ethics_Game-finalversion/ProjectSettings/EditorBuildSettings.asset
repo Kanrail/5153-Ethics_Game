@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Level Select Screen.unity
-    guid: fe6a38a046e5afb4dabfa0b1da707650
+    path: Assets/Scenes/Menu.unity
+    guid: d88f1eb57061e1e4ba8a821e50eec028
   - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: c68277d52ef88bb43b714f21be45772e
+  - enabled: 1
+    path: Assets/Scenes/Level Select Screen.unity
+    guid: fe6a38a046e5afb4dabfa0b1da707650
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 508d874a6a5c34d49aced2e9cfd7efa9
@@ -30,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Game2GameOver.unity
     guid: ff6e7937d1cdc8841b76e7895a008610
   - enabled: 1
-    path: Assets/Scenes/EQuestionWLScreen.unity
+    path: Assets/Scenes/EQuestionWScreen.unity
     guid: fd5d23a86dea220498c49e09009c21c9
   - enabled: 1
     path: Assets/Scenes/FlappyBird.unity
@@ -39,6 +42,12 @@ EditorBuildSettings:
     path: Assets/Scenes/EthicsQuestion.unity
     guid: fdf4b6e0da9836244b3252f1e74a0d9d
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: d88f1eb57061e1e4ba8a821e50eec028
+    path: Assets/Scenes/EQuestionLScreen.unity
+    guid: 10be669807a2ed6458c70429e4ef00fb
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 92fdf8d494ad5cc41b47551e58cc6823
+  - enabled: 1
+    path: Assets/Scenes/Help.unity
+    guid: 9215363b8af568d4d8d002dc70338e15
   m_configObjects: {}

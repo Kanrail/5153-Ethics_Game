@@ -18,6 +18,16 @@ public class Menu_Controller : MonoBehaviour {
 		SceneManager.LoadScene ("Level Select Screen");
 	}
 
+    public void HelpScreen()
+    {
+        SceneManager.LoadScene("Help");
+    }
+
+    public void CreditsScreen()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void StartGame_Easy()
     {
         SceneManager.LoadScene("Game2");
@@ -55,6 +65,11 @@ public class Menu_Controller : MonoBehaviour {
     public void Rematch()
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
     
