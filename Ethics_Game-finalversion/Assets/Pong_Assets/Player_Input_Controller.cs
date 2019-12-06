@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//*******************************************************************
+//                      Player_Input_Controller Class
+//
+//   Handles all of the movement of the 'bats'.
+//********************************************************************
 public class Player_Input_Controller : MonoBehaviour {
 
 	// Script that handles input from two players
@@ -12,13 +17,26 @@ public class Player_Input_Controller : MonoBehaviour {
 	public GameObject rightBat;
 
 
-	// Use this for initialization
-	void Start () {
+    //*******************************************************************
+    //                    ObjectName:Start()
+    //                    Parameters: N/A
+    //
+    //      Start is called before the first frame update, like a constructor.
+    //      Starts is unnecessary to utilize here.
+    //********************************************************************
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    //*******************************************************************
+    //                    ObjectName:Update()
+    //                    Parameters: N/A
+    //
+    //      Update is called once per frame, checks for player input, w and s for left
+    //      player and up and down arrow key for right player. Moves the bats in those same
+    //      associated directions on each frame.
+    //********************************************************************
+    void Update () {
 
 		//Defualt speed of the bat to zero on every frame
 		leftBat.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);

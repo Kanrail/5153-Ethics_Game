@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//*******************************************************************
+//                      SpawnFood Class
+//
+//   Handles the spawning of all food pellets
+//********************************************************************
 public class SpawnFood : MonoBehaviour
 {
     // Food Pellet Object

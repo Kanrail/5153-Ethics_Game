@@ -68,13 +68,11 @@
     <Compile Include="Assets\FBirdAssets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\FBirdAssets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\MainMenu&amp;LSelect_Assets\AudioController.cs" />
-    <Compile Include="Assets\MainMenu&amp;LSelect_Assets\Game_Controller.cs" />
     <Compile Include="Assets\MainMenu&amp;LSelect_Assets\Menu_Controller.cs" />
     <Compile Include="Assets\Pong_Assets\Ball_Controller.cs" />
     <Compile Include="Assets\Pong_Assets\Player_Input_Controller.cs" />
     <Compile Include="Assets\Pong_Assets\Scoreboard_Controller.cs" />
     <Compile Include="Assets\Snake_Assets\Game2Actions.cs" />
-    <Compile Include="Assets\Snake_Assets\Game2ButtonHandler.cs" />
     <Compile Include="Assets\Snake_Assets\SnakeBehavior.cs" />
     <Compile Include="Assets\Snake_Assets\SpawnFood.cs" />
     <Compile Include="Assets\Sound Manager\Scripts\SoundManager.cs" />

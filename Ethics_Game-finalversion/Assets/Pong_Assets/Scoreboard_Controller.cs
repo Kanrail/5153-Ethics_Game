@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 
+//*******************************************************************
+//                      Scoreboard_Controller Class
+//
+//   Handles updating the scoreboard at the top of the game
+//********************************************************************
 public class Scoreboard_Controller : MonoBehaviour {
 
 	public static Scoreboard_Controller instance;
@@ -15,21 +20,38 @@ public class Scoreboard_Controller : MonoBehaviour {
 	public int playerOneScore;
 	public int playerTwoScore;
 
-	// Use this for initialization
-	void Start () {
+    //*******************************************************************
+    //                    ObjectName:Start()
+    //                    Parameters: N/A
+    //
+    //      Start is called before the first frame update, like a constructor.
+    //      Sets the initial scores to 0.
+    //********************************************************************
+    void Start () {
 
 		instance = this;
 
 		playerOneScore = playerTwoScore = 0;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    //*******************************************************************
+    //                    ObjectName:Update()
+    //                    Parameters: N/A
+    //
+    //      Update is called once per frame, was unnecessary, but required.
+    //********************************************************************
+    void Update () {
 
 		
 	}
 
-	public void GivePlayerOneAPoint () {
+    //*******************************************************************
+    //                    ObjectName:GivePlayerOneAPoint()
+    //                    Parameters: N/A
+    //
+    //      Increases the left player score total by one
+    //********************************************************************
+    public void GivePlayerOneAPoint () {
 
 		playerOneScore += 1;
 
@@ -42,7 +64,13 @@ public class Scoreboard_Controller : MonoBehaviour {
 		}
 	}
 
-	public void GivePlayerTwoAPoint () {
+    //*******************************************************************
+    //                    ObjectName:GivePlayerTwoAPoint()
+    //                    Parameters: N/A
+    //
+    //      Increases the right player score total by one
+    //********************************************************************
+    public void GivePlayerTwoAPoint () {
 
 		playerTwoScore += 1;
 

@@ -4,6 +4,13 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
+//*******************************************************************
+//                      SnakeBehavior Class
+//
+//   Handles all of the behavior for the snake to include movement (player input using arrow keys),
+//   collision handling, and tracking the snake's tail and total state.
+//   Constructed initially from tutorial available at https://noobtuts.com/unity/2d-snake-game
+//********************************************************************
 public class SnakeBehavior : MonoBehaviour
 {
     // Current Movement Direction
@@ -25,7 +32,13 @@ public class SnakeBehavior : MonoBehaviour
     // Tail Prefab
     public GameObject tailPrefab;
 
-    // Use this for initialization
+    //*******************************************************************
+    //                    ObjectName:Start()
+    //                    Parameters: N/A
+    //
+    //      Start is called before the first frame update, like a constructor.
+    //      Starts the movement of the snake, initially left.
+    //********************************************************************
     void Start()
     {
         // Move the Snake every 300ms
@@ -34,7 +47,14 @@ public class SnakeBehavior : MonoBehaviour
         numLeftToGo = GameObject.Find("NumLeftLabel").GetComponent<Game2Actions>();
     }
 
-    // Update is called once per frame
+    //*******************************************************************
+    //                    ObjectName:Update()
+    //                    Parameters: N/A
+    //
+    //      Update is called once per frame, if an arrow key is pressed on any
+    //      frame, change the snakes direction to associate with the pressed
+    //      arrow key.
+    //********************************************************************
     void Update()
     {
         // Move in a new Direction?
@@ -48,12 +68,19 @@ public class SnakeBehavior : MonoBehaviour
             direction = Vector2.up;
     }
 
+    //*******************************************************************
+    //                    ObjectName:Move()
+    //                    Parameters: N/A
+    //
+    //      Updates and tracks the current location of the snake head and tail.
+    //      When updating, if 'ate' flag is true, it will spawn a new tail at end of snake.
+    //********************************************************************
     void Move()
     {
-        // Save current position (gap will be here)
+        // Save current position
         Vector2 v = transform.position;
 
-        // Move head into new direction (now there is a gap)
+        // Move head into new direction
         transform.Translate(direction);
 
         // Ate something? Then insert new Element into gap
@@ -82,6 +109,15 @@ public class SnakeBehavior : MonoBehaviour
         }
     }
 
+    //*******************************************************************
+    //                    ObjectName:OnTriggerEnter2D()
+    //                    Parameters: Collider2d coll
+    //
+    //      This function is called when colliding with any object designated a 2D
+    //      collidable object. If that object is a food pellet, it decrements the label
+    //      and sets the 'ate' flag to true and destroys the food pellet sprite.
+    //      If the collision is anything else, it sends the player to game over.
+    //********************************************************************
     void OnTriggerEnter2D(Collider2D coll)
     {
         // Food?

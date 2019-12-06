@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//*******************************************************************
+//                      Ball_Controller Class
+//
+//   Handles all of the behavior for the ball to include movement,
+//   collision handling, and tracking the ball's total state.
+//********************************************************************
 public class Ball_Controller : MonoBehaviour
 {
 
@@ -10,8 +16,13 @@ public class Ball_Controller : MonoBehaviour
 
     float speed = 1.5f;
 
-
-    // Use this for initialization
+    //*******************************************************************
+    //                    ObjectName:Start()
+    //                    Parameters: N/A
+    //
+    //      Start is called before the first frame update, like a constructor.
+    //      Starts the movement of the ball after a 10 second delay.
+    //********************************************************************
     void Start()
     {
 
@@ -20,11 +31,15 @@ public class Ball_Controller : MonoBehaviour
 
         //Pause ball logic for 2.5 seconds, delay launch
         StartCoroutine(Pause());
-
-
     }
 
-    // Update is called once per frame
+    //*******************************************************************
+    //                    ObjectName:Update()
+    //                    Parameters: N/A
+    //
+    //      Update is called once per frame, tracks position of ball on each frame
+    //      And if ball has left screen, it gives the appropriate player a point.
+    //********************************************************************
     void Update()
     {
 
@@ -59,6 +74,12 @@ public class Ball_Controller : MonoBehaviour
 
     }
 
+    //*******************************************************************
+    //                    ObjectName:Pause()
+    //                    Parameters: N/A
+    //
+    //      Calls the LaunchBall function after 2.5 seconds.
+    //********************************************************************
     IEnumerator Pause()
     {
 
@@ -70,6 +91,12 @@ public class Ball_Controller : MonoBehaviour
         LaunchBall();
     }
 
+    //*******************************************************************
+    //                    ObjectName:LaunchBall()
+    //                    Parameters: N/A
+    //
+    //      Launches the ball in a random direction.
+    //********************************************************************
     void LaunchBall()
     {
 
@@ -120,11 +147,14 @@ public class Ball_Controller : MonoBehaviour
         rb.velocity = launchDirection * speed;
     }
 
-
-
-
-
-    // When we hit something else...
+    //*******************************************************************
+    //                    ObjectName:OnCollisionEnter()
+    //                    Parameters: Collision hit
+    //
+    //      Handles collision with sides and 'bats'. Randomly selects a direction
+    //      on collision with bats, and selects a subvector from the same direction the
+    //      ball was already traveling if collision with the top or bottom.
+    //********************************************************************
     void OnCollisionEnter(Collision hit)
     {
 
