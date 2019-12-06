@@ -9,6 +9,7 @@ using UnityEngine;
 //                      Scoreboard_Controller Class
 //
 //   Handles updating the scoreboard at the top of the game
+//   Pong game initially developed from tutorial at https://youtu.be/1TULw0ozlK0
 //********************************************************************
 public class Scoreboard_Controller : MonoBehaviour {
 

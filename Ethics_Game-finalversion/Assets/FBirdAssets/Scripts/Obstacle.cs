@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 //                      Obstacle Class
 //
 //   Handles the movement of all of the logs that bob up and down in the Fbird minigame.
+//   Flappybird game was initially developed from tutorial available at
+//   https://noobtuts.com/unity/2d-flappy-bird-game
 //********************************************************************
 public class Obstacle : MonoBehaviour
 {

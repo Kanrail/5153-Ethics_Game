@@ -5,6 +5,7 @@ using System.Collections;
 //                      SpawnFood Class
 //
 //   Handles the spawning of all food pellets
+//   Constructed initially from tutorial available at https://noobtuts.com/unity/2d-snake-game
 //********************************************************************
 public class SpawnFood : MonoBehaviour
 {

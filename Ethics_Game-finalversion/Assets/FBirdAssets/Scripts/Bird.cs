@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 //
 //   Handles all of the behavior for the bird to include movement (player input using spacebar),
 //   collision handling, and tracking the bird's total state.
+//   Flappybird game was initially developed from tutorial available at
+//   https://noobtuts.com/unity/2d-flappy-bird-game
 //********************************************************************
 public class Bird : MonoBehaviour
 {

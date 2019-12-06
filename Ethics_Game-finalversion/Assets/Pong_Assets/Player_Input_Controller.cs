@@ -6,6 +6,7 @@ using UnityEngine;
 //                      Player_Input_Controller Class
 //
 //   Handles all of the movement of the 'bats'.
+//   Pong game initially developed from tutorial at https://youtu.be/1TULw0ozlK0
 //********************************************************************
 public class Player_Input_Controller : MonoBehaviour {
 

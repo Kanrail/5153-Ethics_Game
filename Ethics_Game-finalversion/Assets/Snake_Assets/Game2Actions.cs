@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 //
 //   Handles all of the background labels and win conditions for the 
 //   Snake minigame
+//   Constructed initially from tutorial available at https://noobtuts.com/unity/2d-snake-game
 //********************************************************************
 public class Game2Actions : MonoBehaviour
 {

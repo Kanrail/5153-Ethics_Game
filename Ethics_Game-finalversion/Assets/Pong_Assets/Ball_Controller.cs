@@ -7,6 +7,7 @@ using UnityEngine;
 //
 //   Handles all of the behavior for the ball to include movement,
 //   collision handling, and tracking the ball's total state.
+//   Pong game initially developed from tutorial at https://youtu.be/1TULw0ozlK0
 //********************************************************************
 public class Ball_Controller : MonoBehaviour
 {

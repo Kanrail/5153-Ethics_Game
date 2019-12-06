@@ -5,6 +5,8 @@ using System.Collections;
 //                      CameraFollow Class
 //
 //   Handles making sure that the camera follows the 'bird' target
+//   Flappybird game was initially developed from tutorial available at
+//   https://noobtuts.com/unity/2d-flappy-bird-game
 //********************************************************************
 public class CameraFollow : MonoBehaviour
 {
